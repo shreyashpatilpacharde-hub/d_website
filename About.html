@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>About Layout</title>
+
+        <style>
+
+            body
+            {
+                font-family: Arial, sans-serif;
+                padding: 10px;
+                background-color: rgb(253, 254, 255);
+            }
+
+            .container
+            {
+                width: 100%;
+                /*border: 2px solid #000;*/
+            }
+
+            .header
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 15px;
+               /* border-bottom: 2px solid #000;*/
+            }
+
+            .logo
+            {
+               width: 150px;
+               height: 100px;
+            }
+            
+            .logo img
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+           
+
+            .menu
+            {
+                width: 600px;
+                height: 40px;
+                /*background: #ddd;*/
+                text-align: center;
+                line-height: 10px;
+            }
+
+            .menu li
+            {
+                display: inline-block;
+                margin-left: 20px;
+            }
+
+            .menu a
+            {
+                text-decoration: none;
+                color: #aa2222;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+            .menu a:hover
+            {
+                color: orange;
+            }
+
+            .banner
+            {
+                height: 350px;
+                background-image: url("About.png");
+                background-size: cover;
+                background-position: center;
+                /*border-bottom: 2px solid #000;*/
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            .banner h1{
+                color: white;
+                font-size: 45px;
+                text-shadow: 2px 2px 8px black;
+                text-align: center;
+            }
+
+            .content
+            {
+                display: flex;
+                padding: 20px;
+                gap: 20px;
+                /*border-bottom: 2px solid #000;*/
+            }
+
+            .left
+            {
+                width: 30%;
+                background-color: aquamarine;
+            }
+            .small-box{
+                height: 120px;
+                /*border: 2px solid black;*/
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .right{
+                width: 90%;
+                min-height: 300px;
+                margin: 20px auto;
+                padding: 30px;
+                /*border: 2px solid black;*/
+                background-color: burlywood;
+                
+            }
+            
+            .stadium-content h2{
+                text-align: center;
+                margin-bottom: 15px;
+                color: #8B0000;
+            }
+            .stadium-content p{
+                margin-bottom: 12px;
+            }
+            .footer-boxes{
+                display: flex;
+                justify-content: space-around;
+                padding: 20px;
+                /*border-bottom: 2px solid black;*/
+            }
+            .footer-box{
+                width: 22%;
+                height: 120px;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(253, 252, 252);
+            }
+            .footer-box img{
+                width: 300px;
+                height: 180px;
+                object-fit: contain;
+            }
+            .sponsers-title{
+                text-align: center;
+                width: 100%;
+                margin: 20px 0;
+            }
+            .copyright{
+                text-align: center;
+                padding: 15px;
+            }
+            @media(max-width:768px){
+                .content{
+                    flex-direction: column;
+                }
+                .right{
+                    width: 100%;
+                   /* border: 2px solid black;*/
+                    min-height: 260px;
+                    background-color: burlywood;
+                    padding: 20px;
+                    text-align: justify;
+                    line-height: 1.8;
+                }
+                .footer-boxes{
+                    flex-wrap:wrap;
+                    gap:15px;
+                }
+                .footer-box{
+                    width:48%;
+                }
+            }
+            @media(max-width:480px){
+                .header{
+                    flex-direction: column;
+                    gap:15px;
+                }
+                .menu{
+                    width: 100%;
+                }
+                .footer-box{
+                    width: 100%;
+                }
+                .banner{
+                    height: 120px;
+                    font-size: 18px;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="header">
+                
+                <div class="logo">
+                    <img src="Sahyadri Original Logo.jpeg" alt="SCA Logo" class="sca-logo">
+
+                    
+                </div>
+                <div class="menu">
+                    
+                    <ul>
+                        <li><a href="Rough.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Tournaments.html">Tournaments</a></li>
+                        <li><a href="Untitled-1.html">Contact</a></li>
+            
+                    </ul>
+                </div>
+            </div>
+
+            <div class="banner"></div>
+
+            <div class="container">
+
+                <div class="content">
+                   
+                    <div class="right">
+                        <div class="stadium-content">
+                           
+
+                            <h3><center>About</center></h3>
+
+                            <p><center>
+                                Cricket Maharashtra is a dedicated platform that embodies the spirit of cricket in the
+                             Maharashtra region. As enthusiasts and advocates of the sport, our mission is to 
+                                foster a vibrant cricketing community, nurturing talent from grassroots to professional levels.
+                            </center></p>
+
+                            <p><center>
+                                 Through our comprehensive coverage, we strive to connect cricket enthusiasts, 
+                                 players, and stakeholders across Maharashtra. Our commitment extends beyond the boundary, aiming to instill a love for the game and contribute to the growth of cricket
+                                in the region. Join us in celebrating the rich cricketing heritage of
+                                Maharashtra and be part of a community that shares the passion for this beloved sport.
+                            </center></p>
+
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="sponsers-title">Sponsers</h3>
+
+                <div class="footer-boxes">
+                   
+                    <div class="footer-box">
+                        <img src="Suhana_3.png" alt="Suhana">
+                    </div>
+                    <div class="footer-box">
+                        <img src="Tata_aia.png" alt="Tata_aia">
+                    </div>
+                    <div class="footer-box">
+                        <img src="Jio_orange.jpeg" alt="Jio_orange">
+                    </div>
+                </div>
+
+                <div class="copyright">
+                   @ Sahyadri Cricket Association
+                </div>
+            </div>
+
+
+            
+        </div>
+    </body>
+</html>

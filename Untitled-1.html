@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Sahyadri Cricket Association</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: rgb(253,254,255);
+}
+
+.container{
+    width:100%;
+    /*border:2px solid #000;*/
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 15px;
+    /*border-bottom:2px solid #000;*/
+}
+
+.logo{
+    width:150px;
+    height:100px;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.menu{
+    width:600px;
+    height:40px;
+    /*background:#ddd;*/
+    text-align:center;
+}
+
+.menu li{
+    display:inline-block;
+    margin-left:20px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#aa2222;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.menu a:hover{
+    color:orange;
+}
+
+.banner{
+    height:350px;
+    background-image:url("Pune Stadium.jpeg");
+    background-size:cover;
+    background-position:center;
+    /*border-bottom:2px solid #000;*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner h1{
+    color:white;
+    font-size:45px;
+    text-shadow:2px 2px 8px black;
+}
+
+.content{
+    padding:20px;
+}
+
+.right{
+    width:90%;
+    margin:auto;
+    padding:30px;
+    /*border:2px solid black; */
+    background-color:burlywood;
+}
+
+.stadium-content h2{
+    text-align:center;
+    color:#8B0000;
+    margin-bottom:20px;
+}
+
+.stadium-content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+table{
+    width:100%;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+input[type="submit"]{
+    width:auto;
+    background:#8B0000;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+input[type="submit"]:hover{
+    background:orange;
+}
+
+.sponsers-title{
+    text-align:center;
+    margin:20px 0;
+}
+
+.footer-boxes{
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
+}
+
+.footer-box img{
+    width:250px;
+    height:150px;
+    object-fit:contain;
+}
+
+.copyright{
+    text-align:center;
+    padding:15px;
+}
+
+@media(max-width:768px){
+
+    .header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        width:100%;
+    }
+
+    .footer-boxes{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .footer-box{
+        width:48%;
+    }
+}
+
+@media(max-width:480px){
+
+    .footer-box{
+        width:100%;
+    }
+
+    .banner{
+        height:180px;
+    }
+
+    .banner h1{
+        font-size:28px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div class="logo">
+            <img src="Sahyadri Original Logo.jpeg" alt="SCA Logo">
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="Rough.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Tournaments.html">Tournaments</a></li>
+                <li><a href="Untitled-1.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="content">
+
+        <div class="right">
+
+            <div class="stadium-content">
+
+                <h2>Sahyadri Cricket Association</h2>
+
+                <p>
+                    <strong>Address:</strong><br>
+                    Sahyadri Cricket Ground,<br>
+                    Pune, Maharashtra, India
+                </p>
+
+                <p>
+                    <strong>Phone:</strong> +91 98765 43210
+                </p>
+
+                <p>
+                    <strong>Email:</strong> info@sahyadricricketassociation.com
+                </p>
+
+                <p>
+                    <strong>Website:</strong> www.sahyadricricketassociation.com
+                </p>
+
+                <h2>Send Us a Message</h2>
+
+                <form>
+
+                    <table cellpadding="10">
+
+                        <tr>
+                            <td>Name</td>
+                            <td>
+                                <input type="text" placeholder="Enter your name">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Email</td>
+                            <td>
+                                <input type="email" placeholder="Enter your email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Phone</td>
+                            <td>
+                                <input type="tel" placeholder="Enter your phone number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Message</td>
+                            <td>
+                                <textarea rows="5" placeholder="Enter your message"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="submit" value="Send Message">
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <h3 class="sponsers-title">Sponsors</h3>
+
+    <div class="footer-boxes">
+
+        <div class="footer-box">
+            <img src="Suhana_3.png" alt="Suhana">
+        </div>
+
+        <div class="footer-box">
+            <img src="Tata_aia.png" alt="Tata AIA">
+        </div>
+
+        <div class="footer-box">
+            <img src="Jio_orange.jpeg" alt="Jio">
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © Sahyadri Cricket Association
+    </div>
+
+</div>
+
+</body>
+</html>
